@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IDM-232-Alpha-KhamneiCharlotte</title>
+        <link href="../stylesheets/alpha_description.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="hero_container">
+            <img src="../assets/alpha_description_hero.png" alt="Etsy Add-to-Cart Microinteraction Description" style="width:100%" id="hero">
+        </div>
+        <div class="header">
+            <h1>Alpha Description</h1>
+            <h2>Original Website URL: <a href="https://www.etsy.com/listing/1260386336/100cm-avocado-simulation-pillow-avocado?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=plushies&ref=sr_gallery-1-24&frs=1&organic_search_click=1&variation0=2769257463">Link to orginal microinteraction</a></h2>
+        </div>
+        <div class="description_container">
+            <div class="cell">
+                <h2>Trigger</h2>
+                <p>Hover state (on/off) & Click</p>
+            </div>
+            <div class="cell">
+                <h2>Rules</h2>
+                    <p>"Add to cart" is selected, item is placed in cart and is marked as "already in cart." </p>
+            </div>
+            <div class="cell">
+                <h2>Feedback</h2>
+                 <ul>
+                    <li>In hover state the button changes from #222222 to #2F2F2F and increases in size by 1.8%.</li>
+                    <li>Once "add to cart" button is clicked, the meta deta is increased by amount selected.</li>
+                    <li>Item is added to cart, modal appears to give addition information.</li>
+                    <li>New animations will occur: a series of hearts (filled with item image) fade in and move left behind modal. Hearts will rotate by 90 degrees in a bouncing loop. Fade out while stil rotating/moving left. </li>
+                 </ul>
+             </div>
+             <div class="cell">
+                <h2>Loops & Modes</h2>
+                <ul>
+                    <li>Number of items in cart is incremented by the quanity added to cart. Icon reflects increased total.</li>
+                    <li>Number of people who have item in cart increments by one, is reflected on the interfaces avaliable to 3rd parties only.</li>
+                    <li>Once "add to cart" is clicked, the modal appears from the right side of the screen. Customer is alerted that item has been added to the cart and is presented with the options to "continue shopping," "view cart and checkout," or view "related items you may like."</li>
+                    <li>Animations occur to the left of the modal, hearts loop rotation for the duration of the animation.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="gallery_container">
+           <figure>
+                <img src="../assets/fade in.png" alt="hearts fading in and moving in left" style="width: 100%" class="description_image">
+                <figcaption>Hearts fading in and moving in left</figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/rotate 1.png" alt="hearts roating position 1" style="width: 100%" class="description_image">
+                <figcaption>Hearts rotating while still moving left.</figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/rotate 2.png" alt="hearts roating position 2" style="width: 100%" class="description_image">
+                <figcaption>Hearts rotating while still moving left.</figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/fade out.png" alt="hearts fading out" style="width: 100%" class="description_image">
+                <figcaption>Hearts fading out in still postion while still rotating.</figcaption>
+            </figure>
+        </div>
+    </body>

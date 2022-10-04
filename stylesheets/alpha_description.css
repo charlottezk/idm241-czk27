@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+ /* Variable Declarations*/ 
+html {
+    /* Colors */
+    --black: #222222;
+    --dark_grey: #2f2f2f;
+    --white:#ffffff;
+    --green: #AEB047;
+
+
+    /* Font Styles*/
+    --header_1: normal 800 40px Garamond, serif;
+    --header_2: normal 900 24px Garamond, serif;
+    --paragraph: normal 400 16px Garamond, serif;
+    --link: normal 400 16px Garamond, serif;
+}
+
+ /* Global Styles*/
+
+body {
+    margin: 0;
+    padding: 0 2.5% 40px;
+    background-color: var(--dark_grey);
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+h1 {
+    color: var(--white);
+    font: var(--header_1);
+    margin: 20px 0;
+} 
+
+h2 {
+    color: var(--white);
+    font: var(--header_2);
+    margin: 20px 0;
+}
+
+.header {
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+}
+
+html {
+    background-color: var(--green);
+    font-size: 100%;
+    margin: 0 10%;
+    padding: 0;
+    border: 0;
+    align-items: center;
+    background-attachment: scroll;
+}
+
+a:link, a:hover, a:visited, a:active {
+    color: var(--white);
+    font: var(--link);
+    margin: 0;
+}
+
+p, ul {
+    color: var(--white);
+    font: var(--paragraph);
+    text-transform: none;
+    margin: 0;
+}
+
+figcaption {
+    color: var(--green);
+    font: var(--paragraph);
+    font-size: 10px;
+    margin: 10px 0px;
+    align-self: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hero_container {
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    width: 75%;
+}
+
+#hero {
+    align-self: center;
+    justify-self: center;
+}
+
+.description_container  {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+.cell {
+    padding: 2.25rem;
+    width: 50%;
+}
+
+.gallery_container {
+    align-self: center;
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+figure {
+    width: 40%;
+    margin: 10px auto;
+}
