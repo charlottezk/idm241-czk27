@@ -1,19 +1,19 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
  /* Variable Declarations*/ 
 html {
     /* Colors */
     --black: #222222;
     --dark_grey: #2f2f2f;
-    --white:#ffffff;
+    --white: #ffffff;
     --green: #AEB047;
 
-
     /* Font Styles*/
-    --header_1: normal 800 40px Garamond, serif;
-    --header_2: normal 900 28px Garamond, serif;
-    --paragraph: normal 200 20px Garamond, serif;
-    --link: normal 400 24px Garamond, serif;
+    --header_2: normal 900 28px Poppins, sans-serif;
+    --header_1: normal 800 40px Poppins, sans-serif;
+    --paragraph: normal 200 20px Poppins, sans-serif;
+    --link: normal 400 24px Poppins, sans-serif;
 }
 
  /* Global Styles*/
@@ -75,7 +75,7 @@ p, ul {
 figcaption {
     color: var(--green);
     font: var(--paragraph);
-    font-size: 12px;
+    font-size: 16px;
     margin: 10px 0px;
 }
 
@@ -112,6 +112,7 @@ figcaption {
     align-self: center;
     display: inline-flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -119,6 +120,26 @@ figcaption {
 }
 
 figure {
-    width: 40%;
-    margin: 10px auto;
+    width: 45%;
+    margin: 10px 5px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 938px) {
+
+    .gallery_container > * {
+        width: 100%;
+    }
+
+    .description_container > * {
+        width: 100%;
+    }
+
+    .figure {
+        min-width: 350px;
+    }
+
+
+
 }

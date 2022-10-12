@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IDM-232-Alpha-KhamneiCharlotte</title>
+        <link href="./stylesheets/alpha_description.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="hero">
+            <img src="./assets/alpha_description_hero.png" alt="Etsy Add-to-Cart Microinteraction Description" style="width:100%">
+        </div>
+        <div id="header">
+            <h1 >Alpha Description</h1>
+            <h2>Original Website URL: <a href="https://www.etsy.com/listing/1260386336/100cm-avocado-simulation-pillow-avocado?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=plushies&ref=sr_gallery-1-24&frs=1&organic_search_click=1&variation0=2769257463" target="_blank" rel="noopener noreferrer">etsy.com</a></h2>
+        </div>
+        <div class="description_container">
+            <div class="cell">
+                <h2>Trigger</h2>
+                <ul>
+                    <li>Hover state (on/off) & Click</li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>Rules</h2>
+                <ul>
+                    <li>Once curser is hovered over "add to cart" button, curser changes from arrow to hand.</li>
+                    <li>In hover-on state, button changes from #222222 to #2F2F2F.</li>
+                    <li>Button size instantaniously starts to increase by total of 19%, over 1s. Curve starts steep and gradually gets slower, to create swell affect.</li>
+                    <li>Quickly changes back to orginaly size, "swell" animation restarts and loops until "hover-off" state occurs.</li>
+                    <li>If curser is hovered off, the state goes back to original state.</li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>Feedback</h2>
+                 <ul style="padding-left: 0;">
+                    <li>Once curser is hovered over "add to cart" button, curser changes from arrow to hand.</li>
+                    <li>In hover-on state, button changes from #222222 to #2F2F2F.</li>
+                    <li>Button size instantaniously starts to increase by total of 19%, over 1s. Curve starts steep and gradually gets slower, to create swell affect.</li>
+                    <li>Quickly changes back to orginaly size, "swell" animation restarts and loops until "hover-off" state occurs.</li>
+                    <li>If curser is hovered off, the state goes back to original state.</li>
+                 </ul>
+             </div>
+             <div class="cell">
+                <h2>Loops & Modes</h2>
+                <ul style="padding-left: 0;">
+                    <li>"Swell" animation loops while hover state is on.</li>
+                    <li>No modes.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="gallery_container">
+           <figure>
+                <img src="./assets/hover off.png" alt="hover off state" style="width: 100%" class="description_image">
+                <figcaption>1: Hover off state</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/hover on 1.png" alt="hover on state 1" style="width: 100%" class="description_image">
+                <figcaption>2: Hover on size 1.</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/hover on swell state.png" alt="hover on state 2" style="width: 100%" class="description_image">
+                <figcaption>3: Hover on final size.</figcaption>
+            </figure>
+        </div>
+        <h2>Content use discloser: All content used from Etsy.com used for non-commerical, educational perposes.</h2>
+    </body>
