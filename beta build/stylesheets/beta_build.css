@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+ /* Root Declarations*/
+ 
+ html {
+    /* Colors */
+    --black: #141414;
+    --white: #ffffff;
+
+
+    /* Font Styles*/
+    
+    font-family: 'Raleway', sans-serif;
+
+    --header_2: normal 580 20px Raleway, sans-serif;
+    --header_1: normal 210 48px Raleway, sans-serif;
+    --paragraph: normal 400 14px Raleway, sans-serif;
+    --link: normal 400 20px Raleway, sans-serif;
+}
+
+
+html {
+    background-color: var(--black);
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-items: center;
+    background-attachment: scroll;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    padding: 0;
+    margin: 0; 
+}
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+/* Text Style Declarations */
+
+.h1 {
+    color: var(--white);
+    font: var(--header_1);
+    text-transform: uppercase;
+} 
+
+.h2 {
+    color: var(--white);
+    font: var(--header_2);
+}
+
+a:link, a:hover, a:visited, a:active {
+    color: var(--white);
+    font: var(--link);
+    margin: 0;
+}
+
+.p {
+    color: var(--white);
+    font: var(--paragraph);
+    text-transform: none;
+    margin: 0;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+/* Layout Declarations */
+
+
+.header {
+    margin: 40px;
+    padding: auto;
+    display: inline-flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.description_container  {
+    margin: 40px 0px;
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_container {
+    display: grid;
+    gap: 40px 10px;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
+    text-align: center;
+
+}
+
+#item_4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+/* responsive styles */
+
+@media screen and (max-width: 938px) {
+
+
+}
